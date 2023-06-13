@@ -1,0 +1,19 @@
+spring:
+  # DB 설정
+  datasource:
+    url: jdbc:mysql://localhost:3306/springbatch?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: rmaksTjfk12!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # Spring Batch 설정
+  batch:
+    job:
+      # Job name 을 넘겨줘야 한다. 지금은 Program Parameter 로 넘겼음.
+      names: ${job.name:NONE}
+    jdbc:
+      initialize-schema: ALWAYS
+
+  # JPA 설정
+  jpa:
+    show-sql: true
