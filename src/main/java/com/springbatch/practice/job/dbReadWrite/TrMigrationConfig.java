@@ -1,9 +1,9 @@
 package com.springbatch.practice.job.dbReadWrite;
 
-import com.springbatch.practice.job.domain.accounts.Accounts;
-import com.springbatch.practice.job.domain.accounts.AccountsRepository;
-import com.springbatch.practice.job.domain.orders.Orders;
-import com.springbatch.practice.job.domain.orders.OrdersRepository;
+import com.springbatch.practice.core.domain.accounts.Accounts;
+import com.springbatch.practice.core.domain.accounts.AccountsRepository;
+import com.springbatch.practice.core.domain.orders.Orders;
+import com.springbatch.practice.core.domain.orders.OrdersRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;

@@ -1,4 +1,4 @@
-package com.springbatch.practice.job.domain.orders;
+package com.springbatch.practice.core.domain.orders;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

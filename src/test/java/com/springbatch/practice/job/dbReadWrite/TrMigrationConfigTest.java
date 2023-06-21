@@ -1,10 +1,9 @@
 package com.springbatch.practice.job.dbReadWrite;
 
 import com.springbatch.practice.SpringBatchTestConfig;
-import com.springbatch.practice.job.domain.accounts.AccountsRepository;
-import com.springbatch.practice.job.domain.orders.Orders;
-import com.springbatch.practice.job.domain.orders.OrdersRepository;
-import com.springbatch.practice.job.helloworld.HelloWorldJobConfig;
+import com.springbatch.practice.core.domain.accounts.AccountsRepository;
+import com.springbatch.practice.core.domain.orders.Orders;
+import com.springbatch.practice.core.domain.orders.OrdersRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -18,8 +17,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Date;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @RunWith(SpringRunner.class)
 @ActiveProfiles("test")

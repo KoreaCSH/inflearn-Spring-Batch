@@ -1,6 +1,6 @@
-package com.springbatch.practice.job.domain.accounts;
+package com.springbatch.practice.core.domain.accounts;
 
-import com.springbatch.practice.job.domain.orders.Orders;
+import com.springbatch.practice.core.domain.orders.Orders;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;

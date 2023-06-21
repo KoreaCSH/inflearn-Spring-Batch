@@ -20,6 +20,8 @@ spring:
     job:
       # Job name 을 넘겨줘야 한다. 지금은 Program Parameter 로 넘겼음.
       names: ${job.name:NONE}
+      # 프로젝트 시작할 때 Parameter 존재하더라도, Parameter 로 넘겨준 job 이 실행되지 않는다. 스케줄링으로 실행된다.
+      enabled: false
     jdbc:
       initialize-schema: ALWAYS
 

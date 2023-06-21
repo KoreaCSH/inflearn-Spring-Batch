@@ -1,4 +1,4 @@
-package com.springbatch.practice.job.domain.accounts;
+package com.springbatch.practice.core.domain.accounts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
