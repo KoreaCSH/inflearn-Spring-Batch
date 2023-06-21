@@ -1,7 +1,6 @@
 package com.springbatch.practice.job.domain.orders;
 
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +11,7 @@ import java.util.Date;
 @Entity
 @Getter
 @ToString
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Orders {
 
     @Id
@@ -21,5 +21,12 @@ public class Orders {
     private String orderItem;
     private Integer price;
     private Date orderDate;
+
+    @Builder
+    public Orders(String orderItem, Integer price, Date orderDate) {
+        this.orderItem = orderItem;
+        this.price = price;
+        this.orderDate = orderDate;
+    }
 
 }
